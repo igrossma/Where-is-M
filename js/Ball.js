@@ -6,7 +6,7 @@ class Ball {
     this.vy = vy;
     this.vx = vx;
     this.img = new Image();
-    this.img.src = "/Cups-Balls/images/circle-cropped.png" 
+    this.img.src = "/Where-is-M/images/circle-cropped.png" 
 
   }
   draw(ctx) {
