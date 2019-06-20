@@ -1,0 +1,45 @@
+
+body {
+  font-family: "Permanent Marker";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+}
+
+canvas {
+  background-color: black;
+  max-width: 95vw;
+  max-height: 95vh;
+  margin-right: 10px;
+}
+
+
+#box {
+  display: flex;
+  color: #eeeeee;
+  flex-direction: row;
+  align-items: center;
+}
+
+#levelName {
+  display: flex;
+  color: #eeeeee;
+  font-size: 14px;
+}
+
+#levelNumber {
+  display: flex;
+  color: #eeeeee;
+  font-size: 100px;
+}
+
+#numberOfLevels {
+  display: flex;
+  color: #eeeeee;
+  font-size: 14px;
+}
+
+
