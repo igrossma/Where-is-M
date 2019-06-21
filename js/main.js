@@ -76,11 +76,11 @@ function drawWinScreen() {
   ctx.fillStyle = "#004d61";
   ctx.font = "120px Permanent Marker";
   ctx.textAlign = "center";
-  ctx.fillText("Congrats", CANVAS_WIDTH / 2, 300);
+  ctx.fillText("You Win !!", CANVAS_WIDTH / 2, 300);
   ctx.font = "40px Permanent Marker";
   ctx.textAlign = "center";
   ctx.fillText("Started from the Bottom", CANVAS_WIDTH / 2, 500);
-  ctx.fillText("now we´re here!", CANVAS_WIDTH / 2, 550) 
+  ctx.fillText("now you´re here ! :)", CANVAS_WIDTH / 2, 550) 
 
   ctx.restore();
 }
@@ -127,7 +127,8 @@ function hideLevelName() {
 }
 
 function showLevelNumber() {
-  if (g.page !== "home") $levelNumber.innerHTML = g.level;
+  if (g.page !== "home") 
+  $levelNumber.innerHTML = g.level;
 }
 
 
@@ -160,6 +161,7 @@ function initGame() {
 document.onkeydown = event => {
   if (event.keyCode === 32) {
     initGame();
+    $audio.play();
   }
 };
 
